@@ -1,0 +1,81 @@
+*,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/pattern.jpg");
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    background-color: #1e90ff;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid transparent;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid whitesmoke;
+}
+
+nav div img {
+    width: 25px;
+}
+
+#article-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+article {
+    background-color: whitesmoke;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px auto;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+    background-color: #1e90ff;
+    color: whitesmoke;
+}
